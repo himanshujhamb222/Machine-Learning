@@ -49,7 +49,7 @@ theta.append(-3)
 
 theta.append(4)
 
-x = np.array([f['Living_Area_in_Sq_feet'],f['Price']])
+x = np.array([f['Population (in Million)'],f['Profit/Loss(in %)']])
 
 [row_check,col_check]=np.shape(x)
 
@@ -82,6 +82,6 @@ for i in range(0,training_data,1):
 
 graph('theta[0]+theta[1]*x', range(0, 23))
 
-plt.plot(f['Living_Area_in_Sq_feet'], f['Price'], 'ro')
+plt.plot(f['Population (in Million)'], f['Profit/Loss(in %)'], 'ro')
 
 plt.show()
