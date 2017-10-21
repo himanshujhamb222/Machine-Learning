@@ -1,4 +1,4 @@
-Living_Area_in_Sq_feet,Price
+Population (in Million),Profit/Loss(in %)
 6.1101,17.592
 5.5277,9.1302
 8.5186,13.662
