@@ -25,7 +25,7 @@ def graph(formula, x_range):
   y = eval(formula)
   plt.plot(x, y, 'b')
 
-f = pandas.read_csv("C:/users/hp/Desktop/ml_gradient_descent.txt")
+f = pandas.read_csv("C:/users/hp/Desktop/data_Set.txt")
 
 [row,col]=np.shape(f)
 
@@ -49,7 +49,7 @@ theta.append(-3)
 
 theta.append(4)
 
-x = np.array([f['Population (in Million)'],f['Profit/Loss(in %)']])
+x = np.array([f['Population of City in 10,000s'],f['Profit in $10,000s']])
 
 [row_check,col_check]=np.shape(x)
 
@@ -82,6 +82,7 @@ for i in range(0,training_data,1):
 
 graph('theta[0]+theta[1]*x', range(0, 23))
 
-plt.plot(f['Population (in Million)'], f['Profit/Loss(in %)'], 'ro')
+plt.plot(f['Population of City in 10,000s'], f['Profit in $10,000s'], 'ro')
 
 plt.show()
+Population of City in 10,000s
