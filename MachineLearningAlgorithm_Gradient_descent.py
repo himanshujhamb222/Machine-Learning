@@ -85,4 +85,3 @@ graph('theta[0]+theta[1]*x', range(0, 23))
 plt.plot(f['Population of City in 10,000s'], f['Profit in $10,000s'], 'ro')
 
 plt.show()
-Population of City in 10,000s
